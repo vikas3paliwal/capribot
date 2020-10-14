@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from config import token
 
 client = commands.Bot(command_prefix='.')
 
@@ -11,4 +12,4 @@ async def on_ready():
 async def homie(channel):
     await channel.send(file=discord.File('images/homie.jpeg'))
 
-client.run("NzY1OTEwNTEyNjk2Njg4Njcw.X4brwA.rFjRIcenYAdBpDYHLCB__HygIQI")
+client.run(token)
