@@ -10,7 +10,7 @@ async def on_ready():
 
 @client.command()
 async def pic(channel, file):
-    filename = 'images/'+file
+    filename = 'images/'+file+'.jpeg'
     await channel.send(file=discord.File(filename))
 
 client.run(token)
