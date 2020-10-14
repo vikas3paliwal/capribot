@@ -9,7 +9,8 @@ async def on_ready():
     print("Bot is ready")
 
 @client.command()
-async def homie(channel):
-    await channel.send(file=discord.File('images/homie.jpeg'))
+async def pic(channel, file):
+    filename = 'images/'+file
+    await channel.send(file=discord.File(filename))
 
 client.run(token)
