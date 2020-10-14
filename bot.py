@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from config import token
+# from config import token
 
 client = commands.Bot(command_prefix='.')
 
