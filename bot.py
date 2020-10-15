@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
-from config import token
+import os
+# from config import token
 
 client = commands.Bot(command_prefix='.')
 
@@ -13,4 +14,6 @@ async def pic(channel, file):
     filename = 'images/'+file+'.jpeg'
     await channel.send(file=discord.File(filename))
 
+
+token = os.environ['discord_token']
 client.run(token)
